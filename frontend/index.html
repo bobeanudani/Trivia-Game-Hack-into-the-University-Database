@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FMI Terminal Access</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.png">
+</head>
+<body>
+
+  <div class="terminal" id="terminal">
+
+    <div class="header">
+      <div class="title">FMI SECURE TERMINAL v1.0</div>
+
+      <div class="status" id="status">STATUS: INITIALIZING</div>
+      <div class="status" id="user">USER: UNKNOWN</div>
+
+      <div class="status-container">
+        <span class="status-led" id="statusLed"></span>
+        <span class="status">CLUSTER STATE: ACTIVE</span>
+      </div>
+      
+      <div class="status" id="players">PLAYERS: 0</div>
+      <div class="status" id="timer">TIME: --</div>
+    </div>
+
+    <div id="output"></div>
+
+    <div class="input-line">
+      <span>&gt;</span>
+      <input id="cmdInput" autocomplete="off" spellcheck="false" />
+    </div>
+
+  </div>
+
+  <script src="./app.js"></script>
+
+</body>
+</html>
